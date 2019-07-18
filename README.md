@@ -1,5 +1,5 @@
 # GetCID-Pro
-# 通过安装ID连接微软网页在线获取确认ID
+# 在线获取确认ID工具
 
 
 ![image](https://github.com/laomms/GetCID-Pro/blob/master/333.png)
