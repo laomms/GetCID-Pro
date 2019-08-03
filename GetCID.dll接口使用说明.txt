@@ -1,0 +1,14 @@
+根据安装ID在线获取确认ID模块.
+.net4.6库,使用说明：
+
+vb.net:
+
+                            Dim func As New GetCID.GetCID
+                            Dim flags As Integer = func.GetConfirmationID(InstalltionID, ConfirmationID)
+                            Do
+                                If flags <> 0 Then
+                                    Exit Do
+                                End If
+                                Application.DoEvents()
+                            Loop
+                            Debug.Print(ConfirmationID)
