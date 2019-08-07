@@ -3,18 +3,19 @@
 
 vb.net:
 
-                            Dim func As New GetCID.GetCID
-                            Dim flags As Integer = func.GetConfirmationID(InstalltionID, ConfirmationID)
-                            Do
-                                If flags <> 0 Then
-                                    Exit Do
-                                End If
-                                Application.DoEvents()
-                            Loop
-                            Debug.Print(ConfirmationID)
+			Dim nFlag As Integer = 0
+			Dim ConfirmationID As String = ""
+			Dim func As New GetCID.GetCID()
+			Dim thread As Thread = New Thread(Sub()
+				nFlag = func.GetConfirmationID(textBox1.Text, ConfirmationID)
+				Dim action As Action = Sub() textBox2.Text = ConfirmationID
+				Me.BeginInvoke(action)
+			End Sub)
+			thread.Start()
 
 
 c#:
+
 
         private static T InlineAssignHelper<T>(ref T target, T value)
         {
