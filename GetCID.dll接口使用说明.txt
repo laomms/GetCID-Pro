@@ -1,5 +1,5 @@
-¸ù¾İ°²×°IDÔÚÏß»ñÈ¡È·ÈÏIDÄ£¿é.
-.net4.6¿â,Ê¹ÓÃËµÃ÷£º
+æ ¹æ®å®‰è£…IDåœ¨çº¿è·å–ç¡®è®¤IDæ¨¡å—.
+.net4.6åº“,ä½¿ç”¨è¯´æ˜ï¼š
 
 vb.net:
 
@@ -12,3 +12,30 @@ vb.net:
                                 Application.DoEvents()
                             Loop
                             Debug.Print(ConfirmationID)
+
+
+c#:
+
+        private static T InlineAssignHelper<T>(ref T target, T value)
+        {
+            target = value;
+            return value;
+        }
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            int nFlag = 0;
+            string ConfirmationID = "";
+            GetCID.GetCID func = new GetCID.GetCID();
+            System.Threading.Thread Thread = new System.Threading.Thread(() => InlineAssignHelper(ref nFlag, func.GetConfirmationID(textBox1.Text,ref ConfirmationID)));
+            Thread.Start();
+            do
+            {
+                if (nFlag != 0)
+                {
+                    break;
+                }
+                Application.DoEvents();
+            } while (true);
+            Thread.Abort();
+            textBox2.Text = ConfirmationID;
+        }
