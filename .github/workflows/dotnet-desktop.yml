@@ -50,5 +50,10 @@ jobs:
       env:
         Configuration: ${{ matrix.configuration }}
 
-
+    # 上传并发布
+    - name: Upload to Artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: GetCID
+        path: GetCID\bin\Release
   
