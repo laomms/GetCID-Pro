@@ -50,39 +50,5 @@ jobs:
       env:
         Configuration: ${{ matrix.configuration }}
 
-    # 执行单元测试
-    #- name: Execute unit tests
-    #  run: dotnet test -c $env:Configuration
-    #  env:
-    #    Configuration: ${{ matrix.configuration }}
-     
-    # 上传并发布
-    - name: Upload to Artifact
-      uses: actions/upload-artifact@v1.0.0
-      with:
-        name: PidKeyTest
-        path: PidKeyTest\bin\Release
 
-    # 创建Release版本
-    #- name: GitHub Release
-    #  id: create_release
-    #  uses: actions/create-release@latest
-    #  env:
-    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #  with:
-    #    tag_name: ${{ github.ref }}
-    #    release_name: PidKeyTest v1.0.0${{steps.version.outputs.value}}
-    #    body: ${{steps.description.outputs.content}}
-    #    draft: false
-    #    prerelease: false
-        
-    # 上传到Release
-    #- name: Upload Windows Artifact
-    #  uses: actions/upload-release-asset@v1
-    #  env:
-    #    GITHUB_TOKEN: ${{ github.token }}
-    #  with:
-    #    upload_url: ${{ steps.create_release.outputs.upload_url }}
-    #    asset_path: PidKeyTest\bin\Release\PidKeyTest.exe
-    #    asset_name: PidKeyTest.exe
-    #    asset_content_type: application/zip
+  
