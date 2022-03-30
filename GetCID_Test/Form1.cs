@@ -26,7 +26,7 @@ namespace GetCID_Test
         private void button1_Click(object sender, EventArgs e)
         {
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://arkcx.club/GetCID.aspx?id=GetCID&pass=GetCID&iid=" + textBox1.Text);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://doonoi.top/GetCID.aspx?id=GetCID&pass=GetCID&iid=" + textBox1.Text);
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             using (Stream stream = response.GetResponseStream())
             using (StreamReader reader = new StreamReader(stream))
