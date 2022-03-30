@@ -34,11 +34,11 @@ jobs:
         msbuild-architecture: x64
 
     # 安装 NuGet
-    #- name: Setup NuGet
-    #  uses: nuget/setup-nuget@v1
-    #  with:
-    #    nuget-api-key: ${{ secrets.NuGetAPIKey }}
-    #    nuget-version: '5.x'
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1
+      with:
+        nuget-api-key: ${{ secrets.NuGetAPIKey }}
+        nuget-version: '5.x'
 
     # 还原 NuGet 包
     #- name: NuGet restore
