@@ -1,0 +1,88 @@
+name: .NET Build & Test
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    # 安装 .NET Core
+    # - name: Install .NET Core
+    #   uses: actions/setup-dotnet@v1
+    #   with:
+    #     dotnet-version: 3.1.202
+
+    # 添加 MSBuild.exe 到环境变量: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.1
+      with:
+        msbuild-architecture: x64
+
+    # 安装 NuGet
+    #- name: Setup NuGet
+    #  uses: nuget/setup-nuget@v1
+    #  with:
+    #    nuget-api-key: ${{ secrets.NuGetAPIKey }}
+    #    nuget-version: '5.x'
+
+    # 还原 NuGet 包
+    #- name: NuGet restore
+    #  run: nuget restore
+
+    # 编译整个项目
+    - name: Build the solution
+      run: msbuild /p:Configuration=$env:Configuration /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    # 执行单元测试
+    #- name: Execute unit tests
+    #  run: dotnet test -c $env:Configuration
+    #  env:
+    #    Configuration: ${{ matrix.configuration }}
+     
+    # 上传并发布
+    - name: Upload to Artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: PidKeyTest
+        path: PidKeyTest\bin\Release
+
+    # 创建Release版本
+    #- name: GitHub Release
+    #  id: create_release
+    #  uses: actions/create-release@latest
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #  with:
+    #    tag_name: ${{ github.ref }}
+    #    release_name: PidKeyTest v1.0.0${{steps.version.outputs.value}}
+    #    body: ${{steps.description.outputs.content}}
+    #    draft: false
+    #    prerelease: false
+        
+    # 上传到Release
+    #- name: Upload Windows Artifact
+    #  uses: actions/upload-release-asset@v1
+    #  env:
+    #    GITHUB_TOKEN: ${{ github.token }}
+    #  with:
+    #    upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #    asset_path: PidKeyTest\bin\Release\PidKeyTest.exe
+    #    asset_name: PidKeyTest.exe
+    #    asset_content_type: application/zip
