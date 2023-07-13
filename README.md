@@ -9,7 +9,7 @@ web版: [https://pidkey.top/pid/GenCID.aspx](https://pidkey.top/pid/GenCID.aspx)
 ![image](https://github.com/laomms/GetCID-Pro/blob/master/111.jpg)
 
 
-## 网页版已失效,改用机器人自动拨号获取：
+## 网页版(https://microsoft.gointeract.io/interact/index?)已失效,改用机器人自动拨号获取：
 ###### Telegram bot: @laomms   @bkkmms    
 ###### Telegram group: https://t.me/get_cid  https://t.me/gtecid2    
 
