@@ -3,7 +3,7 @@
  
 web版: [https://pidkey.vip/GenCID.aspx](https://pidkey.vip/GenCID.aspx)  
 Telegram bot: [@laomms](https://t.me/laomms)  
-QQ bot: 3390735069  
+QQ bot: [3390735069](http://wpa.qq.com/msgrd?v=3&uin=3390735069&site=qq&menu=yes)   
 Wechat bot: khun_tony  
 
 ##### 该工具已失效,因为微软的webact接口地址改成了：https://visualsupport.microsoft.com/+token 的方式了.   
