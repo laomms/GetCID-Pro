@@ -2,7 +2,7 @@
 ### 在线获取确认ID工具  
  
 web版: [https://pidkey.vip/GenCID.aspx](https://pidkey.vip/GenCID.aspx)  
-Telegram bot: @laomms  
+Telegram bot: [@laomms](https://t.me/laomms)  
 QQ bot: 3390735069  
 Wechat bot: khun_tony  
 
