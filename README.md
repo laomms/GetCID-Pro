@@ -8,7 +8,8 @@ Wechat bot: khun_tony
 
 ##### 该工具已失效,因为微软的webact接口地址改成了：https://visualsupport.microsoft.com/+token 的方式了.   
 
-![image](https://github.com/laomms/GetCID-Pro/blob/master/1.jpg)  
-![image](https://github.com/laomms/GetCID-Pro/blob/master/2.jpg)  
+![image](https://github.com/laomms/GetCID-Pro/blob/master/1.png)  
+![image](https://github.com/laomms/GetCID-Pro/blob/master/2.png) 
+![image](https://github.com/laomms/GetCID-Pro/blob/master/3.png)   
 
 
