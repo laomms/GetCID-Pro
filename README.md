@@ -10,7 +10,7 @@ QQ bot: [3390735069](http://wpa.qq.com/msgrd?v=3&uin=3390735069&site=qq&menu=yes
 
 Wechat bot: khun_tony  
 
-##### 该工具已失效,因为微软的webact接口地址改成了：https://visualsupport.microsoft.com/+token 的方式了.   
+##### 该工具已失效  
 
 ![image](https://github.com/laomms/GetCID-Pro/blob/master/1.png)  
 ![image](https://github.com/laomms/GetCID-Pro/blob/master/2.png) 
