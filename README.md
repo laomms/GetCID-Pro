@@ -12,8 +12,6 @@ Wechat bot: khun_tony
 
 ##### 该工具已失效  
 
-![image](https://github.com/laomms/GetCID-Pro/blob/master/1.png)  
-![image](https://github.com/laomms/GetCID-Pro/blob/master/2.png) 
-![image](https://github.com/laomms/GetCID-Pro/blob/master/3.png)   
+
 
 
