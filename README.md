@@ -13,7 +13,7 @@ QQ bot: [3390735069](http://wpa.qq.com/msgrd?v=3&uin=3390735069&site=qq&menu=yes
 Wechat bot: tc_90222    
             tc_90333  
 
-##### 该工具已失效  
+
 
 
 
