@@ -3,7 +3,7 @@
  
 web版: [https://pidkey.vip/GenCID.aspx](https://pidkey.vip/GenCID.aspx)  
 
-Telegram bot: [@laomms](https://t.me/laomms)  
+Telegram bot: [@laomms](https://t.me/laomms)  [@bkkmms](https://t.me/bkkmms)    
 Telegram group: [GETCID Group1](https://t.me/get_cid)   
 WhatsApp Bot: [tcbkk](https://wa.me/message/ETQAZKDFCSZCF1)  
 Discord Channel: [GetCID](https://discord.gg/JDygTcRhhZ)  
