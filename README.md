@@ -1,7 +1,7 @@
 # GetCID-Pro
 ### 在线获取确认ID工具  
  
-web版: [https://pidkey.vip/GenCID.aspx](https://pidkey.vip/GenCID.aspx)  
+web版:  [http://pid.bbroot.com:8080/](http://pid.bbroot.com:8080/)       
 
 Telegram bot: [@laomms](https://t.me/laomms)  [@bkkmms](https://t.me/bkkmms)    
 Telegram group: [GETCID Group1](https://t.me/get_cid)   
